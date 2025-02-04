@@ -1,8 +1,8 @@
 import { validateInput } from "./utils/input.js"
 import { checkBothPasswords } from './utils/checkPassword.js'
 
-function submitForm(formSelector, buttonSelector) {
-  const form = document.getElementById(formSelector)
+function submitForm(formSelector: string, buttonSelector: string):void {
+  const form = document.getElementById(formSelector) as HTMLFormElement | null
   const button = document.getElementById(buttonSelector)
 
   if (!form || !button) {

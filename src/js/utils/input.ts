@@ -1,6 +1,6 @@
-function validateInput(selector, errorSelector) {
-  const input = document.querySelector(selector)
-  const errorText = document.querySelector(errorSelector)
+function validateInput(selector: string, errorSelector: string) {
+  const input = document.querySelector(selector) as HTMLInputElement | null
+  const errorText = document.querySelector(errorSelector) as HTMLInputElement | null
 
   if (!input || !errorText) {
     console.error(`Ошибка: элемент ${selector} или ${errorSelector} не найден`)
@@ -11,8 +11,8 @@ function validateInput(selector, errorSelector) {
   const passwordRegex = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/
   const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-  const inputText = input.value.trim()
-  let isValid = false
+  const inputText: string = input.value.trim() 
+  let isValid: boolean = false
 
   if (input.getAttribute('data-input') === 'login') {
     if (!loginRegex.test(inputText)) {
