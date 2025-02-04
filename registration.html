@@ -31,22 +31,48 @@
     <main class="main">
       <img class="main-image" src="../logo.webp" alt="Main Image">
       <div class="form-container">
-        <form action="">
-            <div class="label-div">
-                <label class="label-text" for="">Type your login</label>
-                <input type="text" name="" id="">
+        <form class="form" id="registrationForm" action="">
+            <div >
+                <div class="label-div">
+                  <label class="label-text" for="loginInput">Type your login</label>
+                  <input class="input-login" data-input="login" type="text" name="" id="loginInput">
+                </div>
+                <div class="error-block">
+                  <p class="error"></p>
+                </div>
             </div>
-            <div class="label-div">
-                <label class="label-text" for="">Type your email</label>
-                <input type="text" name="" id="">
+            
+            <div>
+              <div class="label-div">
+                <label class="label-text" for="emailInput">Type your email</label>
+                <input class="input-email" data-input="email" type="text" name="" id="emailInput">
+              </div>
+              <div class="error-block">
+                <p class="error email-error"></p>
+              </div>
             </div>
-            <div class="label-div">
-                <label class="label-text" for="">Type your password</label>
-                <input type="text" name="" id="">
+
+            <div>
+                <div class="label-div">
+                  <label class="label-text" for="passwordInput">Type your password</label>
+                  <input class="input-password" data-input="password" type="password" name="" id="passwordInput">
+                </div>
+                <div class="error-block">
+                  <p class="error password-error"></p>
+                </div>
             </div>
-            <div class="label-div">
-                <label class="label-text" for="">Repeat your password</label>
-                <input type="text" name="" id="">
+
+            <div>
+              <div class="label-div">
+                <label class="label-text" for="repeatedPassword">Repeat your password</label>
+                <input class="input-repeated-password" type="password" data-input="repeatedPassword" name="" id="repeatedPassword">
+              </div>
+              <div class="error-block">
+                <p class="error error-last repeated-error"></p>
+              </div>                
+            </div>
+            <div class="btn-block">
+              <button id="registrationBtn">Create Account</button>
             </div>
           </form>
       </div>
@@ -57,7 +83,7 @@
       </div>
     </footer>
   </div>
-  <script src="./js/registration.js"></script>
+  <script type="module" src="./js/registration.js"></script>
 </body>
 
 </html>

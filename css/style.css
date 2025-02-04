@@ -51,7 +51,7 @@ a {
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
-
+    width: 30%;
 }
 
 form {
@@ -62,4 +62,27 @@ form {
 .label-div {
     display: flex;
     justify-content: space-between;
+}
+
+.error {
+    font-size: 0.875rem;
+    color: red;
+    margin-top: 4px;
+    padding: 5px 0;
+    height: 11px;
+}
+
+.error-block {
+    display: flex;
+    justify-content: end;
+}
+
+.error-last {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.btn-block {
+    display: flex;
+    justify-content: center;
 }
