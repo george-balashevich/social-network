@@ -1,9 +1,9 @@
 import { validateInput } from "./utils/input.js"
 import { checkBothPasswords } from './utils/checkPassword.js'
 
-function submitForm(formSelector: string, buttonSelector: string):void {
+function submitForm(formSelector: string, buttonSelector: string) {
   const form = document.getElementById(formSelector) as HTMLFormElement | null
-  const button = document.getElementById(buttonSelector)
+  const button = document.getElementById(buttonSelector) as HTMLElement | null
 
   if (!form || !button) {
     console.log(form)
@@ -11,7 +11,7 @@ function submitForm(formSelector: string, buttonSelector: string):void {
     return
   }
 
-  button.addEventListener('click', e => {
+  button.addEventListener('click', e=> {
     e.preventDefault()
 
     const isLoginValid = validateInput('.input-login', '.error')
@@ -21,7 +21,6 @@ function submitForm(formSelector: string, buttonSelector: string):void {
 
     if (isLoginValid && isEmailValid && isPasswordValid && isPasswordsMatch) {
       console.log("Форма успешно отправлена!")
-      form.submit()
     } else {
       console.log("Форма содержит ошибки!")
     }

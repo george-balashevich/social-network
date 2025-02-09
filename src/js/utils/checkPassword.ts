@@ -1,7 +1,7 @@
-function checkBothPasswords(passwordSelector: string, repeatedPasswordSelector: string, errorSelector: string) {
-  const password = document.querySelector(passwordSelector) as HTMLFormElement | null
+function checkBothPasswords(passwordSelector: string, repeatedPasswordSelector: string, errorSelector: string):boolean {
+  const password = document.querySelector(passwordSelector) as HTMLInputElement | null
   const repeatedPassword  = document.querySelector(repeatedPasswordSelector) as HTMLInputElement | null
-  const errorText = document.querySelector(errorSelector) as HTMLInputElement | null
+  const errorText = document.querySelector(errorSelector) as HTMLElement | null
 
   if (!errorText || !password || !repeatedPassword) return false
 

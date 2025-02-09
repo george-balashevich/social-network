@@ -16,11 +16,11 @@ function submitForm(formSelector, buttonSelector) {
         const isPasswordsMatch = checkBothPasswords('.input-password', '.input-repeated-password', '.repeated-error');
         if (isLoginValid && isEmailValid && isPasswordValid && isPasswordsMatch) {
             console.log("Форма успешно отправлена!");
-            form.submit();
+            // form.submit()
         }
         else {
             console.log("Форма содержит ошибки!");
         }
-    });
+    }, true);
 }
 export { submitForm };
