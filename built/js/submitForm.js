@@ -1,10 +1,10 @@
 import { validateInput } from "./utils/input.js";
 import { checkBothPasswords } from './utils/checkPassword.js';
+import { loader } from './utils/loader.js';
 function submitForm(formSelector, buttonSelector) {
     const form = document.getElementById(formSelector);
     const button = document.getElementById(buttonSelector);
     if (!form || !button) {
-        console.log(form);
         console.error("Форма или кнопка не найдены!");
         return;
     }
@@ -16,11 +16,14 @@ function submitForm(formSelector, buttonSelector) {
         const isPasswordsMatch = checkBothPasswords('.input-password', '.input-repeated-password', '.repeated-error');
         if (isLoginValid && isEmailValid && isPasswordValid && isPasswordsMatch) {
             console.log("Форма успешно отправлена!");
-            // form.submit()
+            loader('.loader', true);
+            setTimeout(() => {
+                window.location.href = '../accountPage.html';
+            }, 3000);
         }
         else {
             console.log("Форма содержит ошибки!");
         }
-    }, true);
+    });
 }
 export { submitForm };
