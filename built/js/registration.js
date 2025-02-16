@@ -1,6 +1,6 @@
 import { submitForm } from './submitForm.js';
-function registration() {
+import { linkHandler } from "./state.js";
+document.addEventListener("DOMContentLoaded", () => {
     submitForm('registrationForm', 'registrationBtn');
-}
-registration();
-export { registration };
+    linkHandler(".header-link");
+});
