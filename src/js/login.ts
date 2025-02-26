@@ -1,5 +1,6 @@
-import { linkHandler } from "./state.js"
+import "../css/style.css"
 
-document.addEventListener("DOMContentLoaded", () => {
-  linkHandler(".header-link")
-})
+function callMe(): any {
+  console.log(123)
+}
+callMe()

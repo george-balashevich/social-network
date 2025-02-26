@@ -1,8 +1,7 @@
-import { submitForm } from './submitForm.js'
-import { linkHandler } from "./state.js"
+import { submitForm } from './submitForm'
+import "../css/style.css"
 
 
 document.addEventListener("DOMContentLoaded", () => {
   submitForm('registrationForm', 'registrationBtn')
-  linkHandler(".header-link")
 })

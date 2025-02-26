@@ -1,6 +1,7 @@
-import { validateInput } from "./utils/input.js"
-import { checkBothPasswords } from './utils/checkPassword.js'
-import { loader } from './utils/loader.js'
+import { validateInput } from "./utils/input"
+import { checkBothPasswords } from './utils/checkPassword'
+import { loader } from './utils/loader'
+import "../css/style.css"
 
 function submitForm(formSelector: string, buttonSelector: string) {
   const form = document.getElementById(formSelector) as HTMLFormElement | null

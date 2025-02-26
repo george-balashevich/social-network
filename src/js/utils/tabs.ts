@@ -2,7 +2,6 @@ function showTab(selector:string) {
   const contentToShow = document.querySelectorAll(selector) as NodeListOf<HTMLAnchorElement>
 
   contentToShow[0].style.display = 'block'
-  
 }
 
 function hideTabs(selector:string) {
