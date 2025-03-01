@@ -3,5 +3,5 @@ import "../css/style.css"
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  submitForm('registrationForm', 'registrationBtn')
+  submitForm('registrationBtn')
 })

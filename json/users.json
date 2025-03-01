@@ -1,0 +1,108 @@
+[
+  {
+    "id": 1,
+    "login": "login",
+    "username": "john_doe",
+    "fullName": "John Doe",
+    "email": "john@example.com",
+    "passwordHash": "pass",
+    "profilePicture": "images/john_doe.jpg",
+    "bio": "Love coding and hiking!",
+    "location": "New York, USA",
+    "website": "https://johndoe.dev",
+    "followers": [
+      2,
+      3,
+      4
+    ],
+    "following": [
+      3,
+      5
+    ],
+    "posts": [
+      {
+        "postId": 101,
+        "content": "Just finished a great project!",
+        "image": "images/post101.jpg",
+        "likes": 4,
+        "comments": [
+          {
+            "userId": 3,
+            "comment": "Awesome! Congrats!",
+            "timestamp": "2025-02-05T12:30:00Z"
+          },
+          {
+            "userId": 4,
+            "comment": "Awesome! Congrats!",
+            "timestamp": "2025-02-05T12:30:00Z"
+          },
+          {
+            "userId": 5,
+            "comment": "Awesome! Congrats!",
+            "timestamp": "2025-02-05T12:30:00Z"
+          }
+        ],
+        "timestamp": "2025-02-05T10:00:00Z"
+      },
+      {
+        "postId": 102,
+        "content": "new 2Just finished a great project!",
+        "image": "images/post101.jpg",
+        "likes": 5,
+        "comments": [
+          {
+            "userId": 3,
+            "comment": "Awesome! Congrats!",
+            "timestamp": "2025-02-05T12:30:00Z"
+          }
+        ],
+        "timestamp": "2025-02-05T10:00:00Z"
+      },
+      {
+        "postId": 103,
+        "content": "new 3 Just finished a great project!",
+        "image": "images/post101.jpg",
+        "likes": 3,
+        "comments": [
+          {
+            "userId": 3,
+            "comment": "Awesome! Congrats!",
+            "timestamp": "2025-02-05T12:30:00Z"
+          }
+        ],
+        "timestamp": "2025-02-05T10:00:00Z"
+      }
+    ],
+    "messages": [
+      {
+        "messageId": 5001,
+        "receiverId": 2,
+        "text": "Hey, how are you?",
+        "timestamp": "2025-02-04T18:45:00Z",
+        "isRead": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "login": "login2",
+    "username": "jane_smith",
+    "fullName": "Jane Smith",
+    "email": "jane@example.com",
+    "passwordHash": "hashed_password_here12",
+    "profilePicture": "images/jane_smith.jpg",
+    "bio": "Traveler and photographer",
+    "location": "London, UK",
+    "website": "https://janesmith.com",
+    "followers": [
+      1,
+      3
+    ],
+    "following": [
+      1,
+      4
+    ],
+    "posts": [],
+    "messages": []
+  }
+]

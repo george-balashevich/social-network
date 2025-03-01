@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/css/style.css":
+/*!***************************!*\
+  !*** ./src/css/style.css ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/css/style.css?");
+
+/***/ }),
+
 /***/ "./src/js/registration.ts":
 /*!********************************!*\
   !*** ./src/js/registration.ts ***!
   \********************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nvar submitForm_1 = __webpack_require__(/*! ./submitForm */ \"./src/js/submitForm.ts\");\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n    (0, submitForm_1.submitForm)('registrationForm', 'registrationBtn');\n});\n\n\n//# sourceURL=webpack:///./src/js/registration.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nvar submitForm_1 = __webpack_require__(/*! ./submitForm */ \"./src/js/submitForm.ts\");\n__webpack_require__(/*! ../css/style.css */ \"./src/css/style.css\");\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n    (0, submitForm_1.submitForm)('registrationForm', 'registrationBtn');\n});\n\n\n//# sourceURL=webpack:///./src/js/registration.ts?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nvar 
   \******************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.submitForm = submitForm;\nvar input_1 = __webpack_require__(/*! ./utils/input */ \"./src/js/utils/input.ts\");\nvar checkPassword_1 = __webpack_require__(/*! ./utils/checkPassword */ \"./src/js/utils/checkPassword.ts\");\nvar loader_1 = __webpack_require__(/*! ./utils/loader */ \"./src/js/utils/loader.ts\");\nfunction submitForm(formSelector, buttonSelector) {\n    var form = document.getElementById(formSelector);\n    var button = document.getElementById(buttonSelector);\n    if (!form || !button) {\n        console.error(\"Форма или кнопка не найдены!\");\n        return;\n    }\n    button.addEventListener('click', function (e) {\n        e.preventDefault();\n        var isLoginValid = (0, input_1.validateInput)('.input-login', '.error');\n        var isEmailValid = (0, input_1.validateInput)('.input-email', '.email-error');\n        var isPasswordValid = (0, input_1.validateInput)('.input-password', '.password-error');\n        var isPasswordsMatch = (0, checkPassword_1.checkBothPasswords)('.input-password', '.input-repeated-password', '.repeated-error');\n        if (isLoginValid && isEmailValid && isPasswordValid && isPasswordsMatch) {\n            console.log(\"Форма успешно отправлена!\");\n            (0, loader_1.loader)('.loader', true);\n            setTimeout(function () {\n                window.location.href = '../accountPage.html';\n            }, 3000);\n        }\n        else {\n            console.log(\"Форма содержит ошибки!\");\n        }\n    });\n}\n\n\n//# sourceURL=webpack:///./src/js/submitForm.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.submitForm = submitForm;\nvar input_1 = __webpack_require__(/*! ./utils/input */ \"./src/js/utils/input.ts\");\nvar checkPassword_1 = __webpack_require__(/*! ./utils/checkPassword */ \"./src/js/utils/checkPassword.ts\");\nvar loader_1 = __webpack_require__(/*! ./utils/loader */ \"./src/js/utils/loader.ts\");\n__webpack_require__(/*! ../css/style.css */ \"./src/css/style.css\");\nfunction submitForm(formSelector, buttonSelector) {\n    var form = document.getElementById(formSelector);\n    var button = document.getElementById(buttonSelector);\n    if (!form || !button) {\n        console.error(\"Форма или кнопка не найдены!\");\n        return;\n    }\n    button.addEventListener('click', function (e) {\n        e.preventDefault();\n        var isLoginValid = (0, input_1.validateInput)('.input-login', '.error');\n        var isEmailValid = (0, input_1.validateInput)('.input-email', '.email-error');\n        var isPasswordValid = (0, input_1.validateInput)('.input-password', '.password-error');\n        var isPasswordsMatch = (0, checkPassword_1.checkBothPasswords)('.input-password', '.input-repeated-password', '.repeated-error');\n        if (isLoginValid && isEmailValid && isPasswordValid && isPasswordsMatch) {\n            console.log(\"Форма успешно отправлена!\");\n            (0, loader_1.loader)('.loader', true);\n            setTimeout(function () {\n                window.location.href = '../accountPage.html';\n            }, 3000);\n        }\n        else {\n            console.log(\"Форма содержит ошибки!\");\n        }\n    });\n}\n\n\n//# sourceURL=webpack:///./src/js/submitForm.ts?");
 
 /***/ }),
 
@@ -85,6 +95,18 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexpo
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
 /******/ 	
 /************************************************************************/
 /******/ 	

@@ -9,6 +9,7 @@
     "moduleResolution": "node",
     "outDir": "./dist",
     "sourceMap": true,
+    "resolveJsonModule": true,
   },
   "ts-node": {
     "compilerOptions": {

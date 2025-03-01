@@ -1,6 +1,10 @@
 import "../css/style.css"
+import {logUser} from './utils/logUser'
 
-function callMe(): any {
-  console.log(123)
+function login(): any {
+  const user = logUser('john@example.com', 'pass', '.email-error', '.password-error', '.btn')
+
+  console.log(user)
 }
-callMe()
+
+login()

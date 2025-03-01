@@ -22,3 +22,8 @@ main {
 .content-tab {
     display: none;
 }
+
+.header-profile {
+    display: flex;
+    justify-content: space-around;
+}

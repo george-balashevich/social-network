@@ -3,11 +3,10 @@ import { checkBothPasswords } from './utils/checkPassword'
 import { loader } from './utils/loader'
 import "../css/style.css"
 
-function submitForm(formSelector: string, buttonSelector: string) {
-  const form = document.getElementById(formSelector) as HTMLFormElement | null
+function submitForm(buttonSelector: string) {
   const button = document.getElementById(buttonSelector) as HTMLElement | null
 
-  if (!form || !button) {
+  if (!button) {
     console.error("Форма или кнопка не найдены!")
     return
   }
@@ -24,7 +23,7 @@ function submitForm(formSelector: string, buttonSelector: string) {
       console.log("Форма успешно отправлена!")
       loader('.loader', true)
       setTimeout(()=> {
-        window.location.href = '../accountPage.html'
+        window.location.href = '../profilePage.html'
       }, 3000)
     } else {
       console.log("Форма содержит ошибки!")

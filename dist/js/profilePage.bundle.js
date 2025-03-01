@@ -10,13 +10,33 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/css/profilePage.css":
+/*!*********************************!*\
+  !*** ./src/css/profilePage.css ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/css/profilePage.css?");
+
+/***/ }),
+
+/***/ "./src/css/style.css":
+/*!***************************!*\
+  !*** ./src/css/style.css ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/css/style.css?");
+
+/***/ }),
+
 /***/ "./src/js/profilePage.ts":
 /*!*******************************!*\
   !*** ./src/js/profilePage.ts ***!
   \*******************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nvar tabs_1 = __webpack_require__(/*! ./utils/tabs */ \"./src/js/utils/tabs.ts\");\nvar profilesTabHandler_1 = __webpack_require__(/*! ./utils/profilesTabHandler */ \"./src/js/utils/profilesTabHandler.ts\");\n(0, tabs_1.hideTabs)('.content-tab');\n(0, tabs_1.showTab)('.content-tab');\n(0, profilesTabHandler_1.profileTabsHandler)('.profile-list-link', '.content-tab');\n\n\n//# sourceURL=webpack:///./src/js/profilePage.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nvar tabs_1 = __webpack_require__(/*! ./utils/tabs */ \"./src/js/utils/tabs.ts\");\nvar profilesTabHandler_1 = __webpack_require__(/*! ./utils/profilesTabHandler */ \"./src/js/utils/profilesTabHandler.ts\");\n__webpack_require__(/*! ../css/style.css */ \"./src/css/style.css\");\n__webpack_require__(/*! ../css/profilePage.css */ \"./src/css/profilePage.css\");\n(0, tabs_1.hideTabs)('.content-tab');\n(0, tabs_1.showTab)('.content-tab');\n(0, profilesTabHandler_1.profileTabsHandler)('.profile-list-link', '.content-tab');\n\n\n//# sourceURL=webpack:///./src/js/profilePage.ts?");
 
 /***/ }),
 
@@ -65,6 +85,18 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexpo
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
 /******/ 	
 /************************************************************************/
 /******/ 	

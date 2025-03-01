@@ -38,7 +38,7 @@ module.exports = {
       directory: path.join(__dirname, "/dist"),
     },
     compress: true,
-    port: 2350,
+    port: 2370,
   },
   plugins: [
     new MiniCssExtractPlugin({
