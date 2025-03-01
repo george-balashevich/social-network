@@ -1,0 +1,29 @@
+.prorfile-list-tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+}
+
+.profile-list {
+    margin-right: 100px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.profile-list-link {
+    cursor: pointer;
+}
+
+.content-tab {
+    display: none;
+}
+
+.header-profile {
+    display: flex;
+    justify-content: space-around;
+}

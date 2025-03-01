@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" src="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+        <ul>
+            <li class="header-li">
+              <a class="header-link" href="./registration.html">registration</a>
+            </li>
+            <li class="header-li">
+              <a class="header-link" href="./login.html">log in</a>
+            </li>
+            <li class="header-li">
+              <a class="header-link" href="./forgotPassword.html">forgot password</a>
+            </li>
+          </ul>
+      <div>
+        <input type="text" name="" id="searchInput">
+        <label for="searchInput">search</label>
+      </div>
+    </header>
+    <main class="main">
+        <img class="main-image" src="./images/logo.webp" alt="Main Image">
+        <div class="loader"></div>
+        <div class="form-container">
+          <form class="form" id="registrationForm" action="">            
+            <div>
+              <div class="label-div">
+                <label class="label-text" for="emailInput">Type your email</label>
+                <input class="input-email" data-input="email" type="text" name="" id="emailInput">
+              </div>
+              <div class="error-block">
+                <p class="error email-error"></p>
+              </div>
+            </div>
+
+            <div>
+                <div class="label-div">
+                  <label class="label-text" for="passwordInput">Type your password</label>
+                  <input class="input-password" data-input="password" type="password" name="" id="passwordInput">
+                </div>
+                <div class="error-block">
+                  <p class="error password-error"></p>
+                </div>
+            </div>
+            <div class="btn-block">
+              <button class="btn btn-outline-primary" id="registrationBtn">Log</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    <footer>
+      <div>
+        policies
+      </div>
+    </footer>
+  </div>
+  <script src="./js/index.login.js"></script>
+</body>
+
+</html>

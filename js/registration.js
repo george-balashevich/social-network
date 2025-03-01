@@ -1,1 +1,0 @@
-const inputLogin = document.querySelector
