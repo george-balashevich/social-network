@@ -20,7 +20,6 @@ function submitForm(buttonSelector: string) {
     const isPasswordsMatch = checkBothPasswords('.input-password', '.input-repeated-password', '.repeated-error')
 
     if (isLoginValid && isEmailValid && isPasswordValid && isPasswordsMatch) {
-      console.log("Форма успешно отправлена!")
       loader('.loader', true)
       setTimeout(()=> {
         window.location.href = '../profilePage.html'
