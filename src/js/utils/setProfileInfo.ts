@@ -3,7 +3,7 @@ function setProfileInfo(nameSelector: string) {
   const nameField = document.querySelector(nameSelector) as HTMLElement | null
 
   if (!nameField || !userInfo ) {
-    console.error(`Element with selector '${nameSelector}' not found.`);
+    console.error(`Element with selector '${nameSelector}' not found.`)
     return
   }
 
